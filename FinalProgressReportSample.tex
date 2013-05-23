@@ -1,17 +1,43 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[a4paper,12pt]{texMemo}
+\usepackage[english]{babel}
+\memoto{Patrick Peters}
+\memofrom{Steven Hill}
+\memosubject{Progress Report}
+\memodate{\today}
+
+
+\usepackage{rotating}
+\usepackage{indentfirst}
+\usepackage{lineno}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{setspace}
-\author{Steven Hill}
-\title{Sample}
+\usepackage{outline}
 \newcommand{\bibent}{\noindent \hangindent 40pt}
 \newenvironment{workscited}{ \doublespacing \newpage \begin{center} Works Cited \end{center}}{\newpage }
 
 \begin{document}
-\section{Easy-Terminal-Alternative Architecture}
+\maketitle
+
+\section{Progress Report}
+The project I am working on is on the development of technical documentation for Easy-Terminal-Alternative as the Center for Genome Research and Biocomputing. This includes an overview of the software, it's purpose, the need for the software, the systems architecture, the way it is configured to work on the CGRB's infrastructure, installation, and the developer documentation for the software. 
+
+The project progress so far has been slow. The only work done is what will be seen in this progress report. The last week was spent almost entirely finishing my senior design project in preparation for the engineering expo. However, the project is still mostly meeting the schedule outlined in the proposal.
+
+An interview with Chris Sullivan, lead computational scientist at the Center for Genome Research and Biocomputing has been scheduled for Thursday. The UML diagrams as listed are not all completed. The Package overview diagram has been finished, but the dataflow diagram is not finished. I am planning on generating the class UML diagrams, but these may prove to be too large to be included. 
+
+Additionally, the architecture section still needs the dataflow writeup itself and a description of the environment that Easy-Terminal-Alternative lives in at the CGRB. The other sections still need to be written and the java-docs need to be created.
+
+Throughout the next week I will continue to add sections to the first draft and meet the listed schedule of the 29th. The project itself has been placed in a git repository to maintain version control and a remote backup of the paper.
+\newpage
+
+\section{Sample Work}
+\subsection{Easy-Terminal-Alternative Architecture}
 ETA is built on several preexisting technologies. These technologies are, Java, Google-web-toolkit (GWT), and Apache Tomcat. Java is the programming language used for both the server application and the client application, GWT compiles java  to create the HTML and Javascript that will appear in the users browser, and Tomcat is the webserver which handles all of the requests and the application ultimately lives on.
 
 \subsection{Aspect-Oriented Design}
@@ -70,11 +96,51 @@ An important thing to note is that the majority of the work is done in the serve
 \label{fig:ETAPackageOverview}
 
 \end{figure}
+\newpage
+\section{Outline}
+\begin{outline}
+\item {\bf Introduction }
+	\begin{outline}
+	\item { Need and Purpose, how research is done, who needs it, etc.} \\
+	\item { "What is" Easy-Terminal-Alternative } \\
+	\item { Benefits}
+	\end{outline}
+\item {\bf Architecture}
+	\begin{outline}
+	\item { Technologies} \\	
+	\item { AO Design Decision} \\
+	\item { Package Overview} \\
+	\item { Dataflow Overview and Diagrams} \\
+	\item { Environment (Linux Environment)} \\
+	\end{outline}
+\item {\bf Installation}
+	\begin{outline}
+	\item { System Dependencies } \\
+	\item { Downloading the source} \\
+	\item { Configuring the source } \\
+	\item { Building the source} \\
+	\item { Launching the application} \\
+	\end{outline}
+\item {\bf Extension and Formal Documentation}
+	\begin{outline}
+	\item { Auth service example} \\
+	\item { Job service example} \\
+	\item { Modifying Client example}\\
+	\item { Java-docs} \\
+	\end{outline}
+\item {\bf Conclusion}
+	\begin{outline}
+	\item { Current state of ETA} \\
+	\item { Future Work, unit-tests, auto install} \\
+	\end{outline}
+\end{outline}
+
+
+
+
 
 \setlength{\parindent}{0.5in}
  
-
- \newpage.
 \begin{workscited}
 
   \bibent
