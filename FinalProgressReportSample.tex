@@ -18,6 +18,9 @@
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{outline}
+\usepackage{paralist}
+
+
 \newcommand{\bibent}{\noindent \hangindent 40pt}
 \newenvironment{workscited}{ \doublespacing \newpage \begin{center} Works Cited \end{center}}{\newpage }
 
@@ -47,10 +50,9 @@ One study concluded that, "AO architectures tended to require less invasive chan
 
 \subsection{Package Overview}
 ETA is broken up into many different packages. "Package objects contain version information about the implementation and specification of a Java package" (Java Platform SE 7). The application is into many packages. The following is the package hierarchy:
-
-\begin{enumerate}
+\begin{compactenum}
     \item client:
-    \begin{enumerate}
+    \begin{compactenum}
         \item button
         \item images
         \item pipeline
@@ -60,80 +62,44 @@ ETA is broken up into many different packages. "Package objects contain version 
         \item tools
         \item window
         \item wrapperrunner
-    \end{enumerate}
+    \end{compactenum}
     \item etadrive
-    \begin{enumerate}
+    \begin{compactenum}
         \item desktop
-    \end{enumerate}
+    \end{compactenum}
     \item remote
-    \begin{enumerate}
+    \begin{compactenum}
         \item api
-    \end{enumerate}
+    \end{compactenum}
     \item server
-    \begin{enumerate}
+    \begin{compactenum}
         \item mysql
         \item remote
         \item rmi
         \item services
         \item settings
-    \end{enumerate}
+    \end{compactenum}
     \item shared
-    \begin{enumerate}
+    \begin{compactenum}
         \item etatype
         \item pipeline
         \item wrapper
-    \end{enumerate}
-\end{enumerate}
+    \end{compactenum}
+\end{compactenum}
 
 Each package servers a purpose and is as decoupled as possible from the other packages. Although complete decoupling is impossible, the higher level classes are written to be as independent as possible. The main coupling that occurs is in the methods that are implemented across the platform, such as client from server, and the remote class from the server. See  \ref{ETAPackageOverview} for detail about the main package relations. 
 
 Inside of each main package, there contains more packages. These are typically reserved for inheritance between similar classes. The most obvious use of this is in the client package. Many different GUI "widgets", or things a user interacts with such as buttons and labels, will often be reused to have different purposes and slightly different appearances. As stated in the official Java API, "Inheritance provides a powerful and natural mechanism for organizing and structuring your software" (Java Platform SE 7).
 
 An important thing to note is that the majority of the work is done in the server package. There are several different "services", or additional programs that ETA relies on which are implemented inside of the server package. This will be expanded on in a later section.
+\\
 \begin{figure}
 \includegraphics[width=1\textwidth]{ETAPackageOverview.jpg}
 \caption{UML Diagram: ETA Package Overview}
 \label{fig:ETAPackageOverview}
 
 \end{figure}
-\newpage
-\section{Outline}
-\begin{outline}
-\item {\bf Introduction }
-	\begin{outline}
-	\item { Need and Purpose, how research is done, who needs it, etc.} \\
-	\item { "What is" Easy-Terminal-Alternative } \\
-	\item { Benefits}
-	\end{outline}
-\item {\bf Architecture}
-	\begin{outline}
-	\item { Technologies} \\	
-	\item { AO Design Decision} \\
-	\item { Package Overview} \\
-	\item { Dataflow Overview and Diagrams} \\
-	\item { Environment (Linux Environment)} \\
-	\end{outline}
-\item {\bf Installation}
-	\begin{outline}
-	\item { System Dependencies } \\
-	\item { Downloading the source} \\
-	\item { Configuring the source } \\
-	\item { Building the source} \\
-	\item { Launching the application} \\
-	\end{outline}
-\item {\bf Extension and Formal Documentation}
-	\begin{outline}
-	\item { Auth service example} \\
-	\item { Job service example} \\
-	\item { Modifying Client example}\\
-	\item { Java-docs} \\
-	\end{outline}
-\item {\bf Conclusion}
-	\begin{outline}
-	\item { Current state of ETA} \\
-	\item { Future Work, unit-tests, auto install} \\
-	\end{outline}
-\end{outline}
+
 
 
 

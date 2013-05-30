@@ -1,0 +1,5 @@
+Cite github source
+Cite http://gridscheduler.sourceforge.net/htmlman/manuals.html
+Figure out what part of job submission handles the database stuff.
+Create dataflow diagram for submitting a job and mayb changing files
+Add pipeline section in the Dataflow section
