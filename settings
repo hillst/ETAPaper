@@ -1,0 +1,30 @@
+gvPass:
+sqluserpass:<password of mysql database>
+localPath:<path where the executables live>
+etaHost:<public name of webserver.
+smtpServer:
+sqlUser:<username for mysql>
+sqlserver:<name of sql server (localhost)>
+supportList:
+mysqlAuth:
+gvEmail:
+localAuth:
+smtpPort:
+localpath:<path where executables live>
+publicPassword:<pub password>
+publicUse:<boolean>
+gangPort:<gang port>
+gangServer:<gang server dn>
+company:<string of company name>
+smtpPass:
+publicUser:nobody
+sqlschemata:<mysql database to use>
+publicWorkingDir:
+smtpEmail:
+keystorepass:<java keystore password>
+keystoreloc:<java keystore location>
+keystoreformat:<format of keystore file>
+ldaphost:<hostname of ldap server>
+ldapport:<ldap server port>
+basedn:<root dn for ldap server>
+authdn:<dn for authentication (ou=People?)>

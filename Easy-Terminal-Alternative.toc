@@ -1,0 +1,23 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Need and purpose}{2}
+\contentsline {subsection}{\numberline {1.2}Goals}{3}
+\contentsline {section}{\numberline {2}Architecture}{3}
+\contentsline {subsection}{\numberline {2.1}Aspect-Oriented Design}{3}
+\contentsline {subsection}{\numberline {2.2}Package Overview}{4}
+\contentsline {subsection}{\numberline {2.3}Dataflow}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Job Submission}{7}
+\contentsline {subsubsection}{\numberline {2.3.2}Wrappers}{8}
+\contentsline {subsection}{\numberline {2.4}Runtime Environment}{8}
+\contentsline {section}{\numberline {3}Installation}{8}
+\contentsline {subsection}{\numberline {3.1}Installing Dependencies}{8}
+\contentsline {subsection}{\numberline {3.2}Downloading the source}{9}
+\contentsline {subsection}{\numberline {3.3}Con\GenericError {(inputenc) }{Package inputenc Error: Unicode char \u 8:ﬁ not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}guring and building the source}{9}
+\contentsline {subsection}{\numberline {3.4}Launching the application}{10}
+\contentsline {section}{\numberline {4}Extension and Formal Documentation}{10}
+\contentsline {subsection}{\numberline {4.1}Services}{11}
+\contentsline {section}{\numberline {5}Conclusion}{11}
+\contentsline {subsection}{\numberline {5.1}Future work}{11}
+\contentsline {section}{\numberline {6}Primary Sources}{14}
+\contentsline {subsection}{\numberline {6.1}Email with Alex Boyd (creator)}{14}
+\contentsline {subsection}{\numberline {6.2}Email Interview With Chris Sullivan}{15}
